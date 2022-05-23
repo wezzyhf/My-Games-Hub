@@ -1,0 +1,82 @@
+
+* {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+	background-image: linear-gradient(45deg, #f38ffa, #539eee);
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+
+.main-header {
+	font-size: 100px;
+	color: white;
+	font-weight: bold;
+	transform: translateY(300px);
+}
+
+.my {
+	display: inline-block;	
+	animation-name: wave;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;												
+}
+
+.games {
+	display: inline-block;
+	animation-name: wave;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.5s;													
+}
+
+.hub {
+	display: inline-block;
+	animation-name: wave;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;													
+}
+
+.main-btn {
+	display: inline-block;
+	transform: translateY(400px);
+	transition: 0.3s;
+	border-radius: 50%;
+	height: 42px;
+	width: 42px;
+}
+.main-btn:hover {
+	transform: scale(2.0) translateY(200px);
+	transition: 0.3s;
+	box-shadow: 0 0 10px hotpink;
+	animation-name: pulsar;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(100px);
+	}
+}
+@keyframes pulsar {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
